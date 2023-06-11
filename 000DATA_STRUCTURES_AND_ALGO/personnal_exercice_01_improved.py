@@ -21,6 +21,8 @@ def main():
         re.search(pattern, line).group(1) for line in lines if re.search(pattern, line)
     ]
     slugs.sort()
+    print(slugs)
+    print(type(slugs))
 
     # loop through the lines
     for slug in slugs:
